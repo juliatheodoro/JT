@@ -1,4 +1,5 @@
 import * as React from 'react';
+<<<<<<< HEAD
 import { Text, Image, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
@@ -58,11 +59,46 @@ function JTAlbunsScreen() {
       <Image style={albuns} source={{ uri: 'https://upload.wikimedia.org/wikipedia/pt/9/9a/Capa_de_Perfect_%28One_Direction%29.png'}}></Image>
     </View>
   </ScrollView>
+=======
+import { Text, View } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { Button, TextInput } from 'react-native-paper';
+
+
+
+function JTHomeScreen() {
+  return (
+    <View style={corzinha}>
+      <Text style={titulo}>Bem Vindos!!!</Text>
+    </View>
+  );
+}
+
+function JTSobreScreen() {
+  return (
+    <View style={corzinha}>
+      <Text style={titulo}>Sobre o Tema</Text>
+      <View style={texto}><View style={escolha}>One direction é uma das melhores boy-bands,que se formaram nos últimos anos. Apesar da banda ter finalizado, eles continuam fazendo sucesso e espalhando uma enorme legião de fãs pelo o mundo. Eles, cantam músicas felizes, românticas e que grudam na mente, acredito que seja um dos principais motivos de eu gostar tanto deles, e é claro pelo o motivo de eles terem feito parte de uma época muito boa da minha vida e eu ter muitas lembranças boas das músicads deles. </View></View>
+    </View>
+  );
+}
+
+function JTAlbunsScreen() {
+  return (
+    <View style={corzinhaal}>
+      <View style={albuns}></View>
+      <View style={albuns}></View>
+      <View style={albuns}></View>
+      <View style={albuns}></View>
+    </View>
+>>>>>>> 5551ba031be23e5c2f134794292d403bb9a23414
   );
 }
 
 function JTContatoScreen() {
   return (
+<<<<<<< HEAD
     <ScrollView>
     <View style={corzinhacon}>
       <Text style={titulocon}>Contato</Text>
@@ -71,6 +107,14 @@ function JTContatoScreen() {
       <Button style={botão} label="Enviar">Enviar</Button>
     </View>
     </ScrollView>
+=======
+    <View style={corzinhacon}>
+      <Text style={titulocon}>Contato</Text>
+      <TextInput style={input} label="Email"></TextInput>
+      <TextInput style={input} label="Email"></TextInput>
+      <Button style={botão} label="Enviar">Enviar</Button>
+    </View>
+>>>>>>> 5551ba031be23e5c2f134794292d403bb9a23414
   );
 }
 
@@ -91,13 +135,18 @@ export default function App() {
 
 const corzinha = {
     backgroundColor: "lightpink",
+<<<<<<< HEAD
     height: "3200px",
+=======
+    height: "100%",
+>>>>>>> 5551ba031be23e5c2f134794292d403bb9a23414
     display: "flex",
     alignItems: "center"
 }
 const titulo = {
     marginTop: "60px",
     textAlign: "center",
+<<<<<<< HEAD
     fontSize: "37px",
 }
 const titulotres = {
@@ -114,11 +163,27 @@ const texto = {
     marginTop: "60px",
     width: "90%",
     height: "37%",
+=======
+    fontSize: "40px",
+}
+const texto = {
+    marginTop: "60px",
+    borderStyle: "solid",
+    borderWidth: "1px",
+    width: "50%",
+    height: "40%",
+    padding: "20px"
+>>>>>>> 5551ba031be23e5c2f134794292d403bb9a23414
 }
 const escolha = {
   backgroundColor: "white",
   padding: "30px",
+<<<<<<< HEAD
   borderRadius: "85px",
+=======
+  borderRadius: "10px",
+  height: "100%",
+>>>>>>> 5551ba031be23e5c2f134794292d403bb9a23414
   fontSize: "30px",
 }
 const corzinhaal = {
@@ -130,19 +195,33 @@ const corzinhaal = {
 }
 const albuns = {
   margin: "15px",
+<<<<<<< HEAD
   width: "200px",
   height: "200px",
+=======
+  width: "40%",
+  height: "170px",
+>>>>>>> 5551ba031be23e5c2f134794292d403bb9a23414
   backgroundColor: "red",
 }
 const corzinhacon = {
   backgroundColor: "lightpink",
+<<<<<<< HEAD
   height: "1000px",
   paddingTop: "20px",
+=======
+  height: "100%",
+  paddingTop: "2%",
+>>>>>>> 5551ba031be23e5c2f134794292d403bb9a23414
   display: "flex",
   alignItems: "center"
 }
 const input = {
+<<<<<<< HEAD
   width: "200px",
+=======
+  width: "20%",
+>>>>>>> 5551ba031be23e5c2f134794292d403bb9a23414
   height: "50px",
   backgroundColor: "white",
   marginTop: "20px"
@@ -153,15 +232,24 @@ const titulocon = {
   fontSize: "50px",
 }
 const botão = {
+<<<<<<< HEAD
   width: "200px",
   height: "50px",
   backgroundColor: "pink",
+=======
+  width: "20%",
+  height: "50px",
+  backgroundColor: "green",
+>>>>>>> 5551ba031be23e5c2f134794292d403bb9a23414
   marginTop: "20px",
   fontSize: "100px",
   padding: "7px",
   textDecoration: "none",
 }
+<<<<<<< HEAD
 const foto = {
   height: "500px",
   width: "500px"
 }
+=======
+>>>>>>> 5551ba031be23e5c2f134794292d403bb9a23414
