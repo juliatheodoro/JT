@@ -1,8 +1,8 @@
 import { createMaterialBottomTabNavigator } from "@react-navigation/material-bottom-tabs";
 import { Home } from "../screens/Home";
-import { Notícias } from "../screens/Notícias";
-import { Produtos } from "../screens/Produtos";
+import { Álbuns } from "../screens/Álbuns";
 import { Sobre } from "../screens/Sobre";
+import { Contato } from "../screens/contato";
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 
 
@@ -39,20 +39,20 @@ export const RootNavigation = () => {
        }}
       />
       <Stack.Screen
-        name="Produtos"
-        component={Produtos}
+        name="Álbuns"
+        component={Álbuns}
        options={{
-         tabBarLabel: 'Produtos',
+         tabBarLabel: 'Álbuns',
          tabBarIcon: ({ color }) => (
             <MaterialCommunityIcons name="watch" color={color} size={26} />
          ),
        }}
       />
       <Stack.Screen
-        name="Notícias"
-        component={Notícias}
+        name="Contato"
+        component={Contato}
        options={{
-         tabBarLabel: 'Notícias',
+         tabBarLabel: 'Contato',
          tabBarIcon: ({ color }) => (
             <MaterialCommunityIcons name="skateboard" color={color} size={26} />
          ),
